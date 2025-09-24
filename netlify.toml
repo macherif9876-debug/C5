@@ -1,11 +1,11 @@
 [build]
-  # Indique à Netlify que le dossier à déployer est le sous-dossier C1
-  publish = "C1"
-  # Aucune commande de compilation nécessaire
+  # Indique à Netlify que le dossier à déployer est le sous-dossier C5
+  publish = "C5"
+  # Aucune commande de compilation nécessaire (pour un site HTML/CSS/JS pur)
   command = ""
 
-# Redirection essentielle pour le routage de votre assistant (SPA)
-# S'assure que si un lien est mal formé, il renvoie toujours vers votre index.html
+# Redirection essentielle pour le routage de l'application
+# Elle garantit que toutes les URLs renvoient vers votre index.html pour éviter les erreurs 404.
 [[redirects]]
   from = "/*"
   to = "/index.html"
