@@ -1,10 +1,10 @@
 [build]
   command = ""
-  publish = "C5"  # <--- Netlify cherche les fichiers dans ce dossier
+  publish = "/" # Publie la racine du dossier C5 (où se trouve index.html)
 
 [[redirects]]
   from = "/"
-  to = "/C5/index.html" # <--- Le chemin de la redirection doit inclure C5
+  to = "/index.html" # Redirige vers index.html qui se trouve dans C5
   status = 200
 
 [functions]
