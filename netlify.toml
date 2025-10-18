@@ -1,3 +1,13 @@
 [build]
-  functions = "netlify/functions"
+  command = ""
+  publish = "/"
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  directory = "netlify/fonctions"
+
 
